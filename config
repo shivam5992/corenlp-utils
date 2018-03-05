@@ -1,0 +1,10 @@
+
+Host Innovaccer
+    Hostname git.innovaccer.com
+    User git
+    IdentityFile ~/.ssh/gitlab
+Host GitHub
+    Hostname www.github.com
+    User git
+    IdentityFile ~/.ssh/github
+    

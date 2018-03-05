@@ -1,0 +1,56 @@
+---------------------------------------
+
+input
+
+-> caused-VBN (root)
+  -> damage-NN (nsubjpass)
+    -> Water-NN (nn)
+  -> was-VBD (auxpass)
+  -> by-IN (prep)
+    -> leak-NN (pobj)
+      -> roof-NN (nn)
+
+---------------------------------------
+
+output
+
+[
+  {
+    "name": "caused-VBN (root)",
+    "parent": "null",
+    "children": [
+      {
+        "name": "damage-NN (nsubjpass)",
+        "parent": "caused-VBN (root)",
+        "children": [
+          {
+            "name": "Water-NN (nn)",
+            "parent": "damage-NN (nsubjpass)"
+          }
+        ]
+      },
+      {
+        "name": "was-VBD (auxpass)",
+        "parent": "caused-VBN (root)"
+      },
+      {
+        "name": "by-IN (prep)",
+        "parent": "caused-VBN (root)",
+        "children": [
+          {
+            "name": "leak-NN (pobj)",
+            "parent": "by-IN (prep)",
+            "children": [
+            {
+              "name": "roof-NN (nn)",
+              "parent": "leak-NN (pobj)"
+            } 
+          ]
+          }
+        ]
+      },
+    ]
+  }
+];
+
+-----------------------------------------
